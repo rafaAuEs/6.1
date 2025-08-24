@@ -1,0 +1,103 @@
+:root {
+    --primary-color: #3498db;
+    --secondary-color: #2c3e50;
+    --light-color: #ecf0f1;
+    --dark-color: #34495e;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    line-height: 1.6;
+    background-color: var(--light-color);
+    color: var(--dark-color);
+}
+
+.header {
+    background-color: var(--secondary-color);
+    color: var(--light-color);
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--light-color);
+    text-decoration: none;
+}
+
+.header .nav a {
+    color: var(--light-color);
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: 500;
+}
+
+.main-content {
+    width: 90%;
+    margin: 0 auto;
+    padding: 2rem 0;
+}
+
+.hero {
+    position: relative;
+    text-align: center;
+    color: white;
+    margin-bottom: 2rem;
+}
+
+.hero-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px 40px;
+    border-radius: 8px;
+}
+
+.hero-text h1 {
+    font-size: 2.5rem;
+    margin: 0 0 10px;
+}
+
+.hero-text p {
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+.cards-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card h3 {
+    color: var(--primary-color);
+    margin-top: 0;
+}
+
+.footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: var(--secondary-color);
+    color: var(--light-color);
+    margin-top: 2rem;
+}
